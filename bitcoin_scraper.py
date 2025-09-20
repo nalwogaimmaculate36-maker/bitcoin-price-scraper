@@ -33,9 +33,13 @@ def automated_crypto_pull():
 
   data = {
         'Crypto Name': crypto_name,
-        'Price': crypto+price,
+        'Price': crypto_price,
         'Timestamp': date_time
         }
+
+  df = pd.DataFrame([data])
+  print(df)
+  
   # Step 5: Save to CSV
   csv_path = r'C:\Users\nalwo\Downloads\Automated Crypto Puller\Crytpo_Automated_Pull.csv'
   if os.path.exists(csv_path):
