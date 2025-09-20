@@ -43,16 +43,6 @@ def automated_crypto_pull():
   else:
       df.to_csv(csv_path, index=False)
 
-
-# Validate extraction
-
-if coin_name_tag and price_tag:
-  coin_name = coin_name_tag.strip()
-  price = price_tag.text.strip().replace('$', '')
-else:
-  print("Failed to extract data from the page.")
-  exit()
-
 # Step 6: Structure data into dictionary
 
 while True:
