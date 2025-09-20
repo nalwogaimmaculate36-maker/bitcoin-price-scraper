@@ -17,7 +17,7 @@ import os
   
 # Step 2: Define scraping function
 
-if automated_crypto_pull():
+def automated_crypto_pull():
   url = 'https://coinmarketcap.com/currencies/bitcoin/'
   page = requests.get(url)
   soup = BeautifulSoup(page.text, 'html.parser')
